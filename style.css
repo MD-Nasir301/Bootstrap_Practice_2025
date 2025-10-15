@@ -1,0 +1,10 @@
+
+.box {
+    height: 10vh;
+    background-color: rgb(12, 209, 209);
+    text-align: center;
+    font-size: 10px;
+    padding-top: 20px;
+    border: 1px solid black;
+    border-right: none;
+}
