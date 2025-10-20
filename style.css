@@ -81,38 +81,46 @@ body {
   margin: 0;
   display: none;
 }
+
 .f-d:focus ul {
   display: block;
 }
+
 .f-d ul li:hover {
   padding: 10px;
   border-bottom: 1px solid #ccc;
 }
+
 .justify {
   text-align: justify;
 }
+
 .video-box {
   border: 2px solid rgb(195, 255, 16);
   height: 330px;
   box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.7);
 }
+
 .video-box iframe {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+
 textarea {
   width: 100%;
   height: 150px;
   border: none;
   background: #c3eafe61;
 }
+
 .slider-area {
   width: 100%;
   height: 500px;
   position: relative;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 .v-bg {
   border: 1px solid rgb(0, 0, 0);
   width: 100%;
@@ -122,11 +130,13 @@ textarea {
   left: 0;
   z-index: -1;
 }
+
 .v-bg video {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+
 .contant {
   position: absolute;
   z-index: 1;
@@ -201,6 +211,7 @@ textarea {
   padding: 20px;
   transition: transform 0.5s ease; /* smooth movement */
 }
+
 .fixed {
   position: fixed;
   top: 0;
@@ -213,12 +224,14 @@ textarea {
   transition: transform 0.5s ease;
   position: relative;
 }
+
 .tr {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
+
 .tranform:hover .tr {
   transform: translateY(200px);
   transform: ;
@@ -233,6 +246,7 @@ textarea {
   background: red;
   position: relative;
 }
+
 .box:hover {
   background: darkred;
   top: 50px; /* উপরে নিয়ে আসা হলো */
@@ -262,6 +276,7 @@ textarea {
   height: 200px;
   margin: 100px;
 }
+
 .scene img {
   width: 100%;
   height: 100%;
@@ -348,23 +363,110 @@ textarea {
 
 .cover-area {
   width: 200px;
-  height: 200px;
+  height: 270px;
   perspective: 600px;
   border: 2px solid black;
   margin: 0px auto;
   position: relative;
+  border: none;
 }
+
 .cover {
   width: 100%;
   height: 100%;
-  background-image: url("image/licensed-image (3).jpg");
+  background-image: url("image/book.png");
   background-size: cover;
   background-position: center;
   transform-style: preserve-3d;
   transition: transform 1s ease;
   transform-origin: left;
-  
+  border-left: 7px solid #6d5858;
+}
+.cover-title {
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  width: 90px;
+  height: 80px;
+  background: #ffffff;
+  color: #000000;
+  padding: 10px;
+}
+.cover-area a {
+  text-decoration: none;
+  color: rgb(86, 5, 208);
 }
 .cover-area:hover .cover {
-  transform: rotateY(-91deg);
+  transform: rotateY(-96deg);
+}
+.b-title {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+p.fs {
+  text-align: center;
+  font-size: 15px;
+  background: none;
+  padding: 10px;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  border-radius: 2px;
+}
+
+.book {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  perspective: 1000px; /* 👈 বইয়ের গভীরতা তৈরি করে */
+}
+
+/* সামনের কভার */
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transform-origin: left; /* 👈 বাঁ দিক থেকে খুলবে */
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* কভারের ছবি */
+.cover img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  backface-visibility: hidden;
+}
+
+/* কভারের ভিতরের দিক (সাদা) */
+.cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: white;
+  border-radius: 5px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+/* বইয়ের ভেতরের পৃষ্ঠা */
+.page {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 5px;
+}
+
+/* Hover করলে বইয়ের কভার খুলবে */
+.book:hover .cover {
+  transform: rotateY(-160deg); /* 👈 বাঁ দিক থেকে উল্টে যাবে */
 }
