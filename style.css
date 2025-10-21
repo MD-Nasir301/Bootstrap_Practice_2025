@@ -377,7 +377,7 @@ textarea {
   background-image: url("image/book.png");
   background-size: cover;
   background-position: center;
-  transform-style: preserve-3d;
+    transform-style: preserve-3d;
   transition: transform 1s ease;
   transform-origin: left;
   border-left: 7px solid #6d5858;
@@ -469,4 +469,58 @@ p.fs {
 /* Hover করলে বইয়ের কভার খুলবে */
 .book:hover .cover {
   transform: rotateY(-160deg); /* 👈 বাঁ দিক থেকে উল্টে যাবে */
+}
+.bo {
+  width: 230px;
+  height: 300px;
+  border: 1px solid rgb(188, 131, 131);
+  perspective: 800px;
+  margin: 0 auto;
+  position: relative;
+  background: #ffffff;
+}
+.boxx {
+  width: 230px;
+  height: 300px;
+  border-left: 6px solid rgb(165, 124, 124);
+  perspective: 800px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url("image/book2.png");
+  background-size: cover;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transform-origin: left;
+  transition: transform 1s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+.bo:hover .boxx {
+  transform: rotateY(-120deg);
+}
+.boxx::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('image/book3.png') rgb(251, 245, 245);
+  background-size: 50%; 
+  background-repeat: no-repeat; 
+  background-position: left;
+  border-radius: 5px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  border: 3px solid rgb(245, 187, 187);
+  border-left: none;
+}
+ 
+.book-content {
+  width: 230px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
 }
