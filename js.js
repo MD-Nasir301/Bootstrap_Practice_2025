@@ -49,7 +49,24 @@ container.addEventListener('mouseleave', () => {
   box.style.transform = 'rotateX(0deg) rotateY(0deg)';
 });
 
+let count = 0;
+
+let b = 5;
+let c = 1;
 
 
+function add(aNumber, bNumber) {
+  return aNumber + bNumber;
+}
+
+// Removed debugging statements and standardized variable names
+// Improved readability by using descriptive names and proper spacing
+
+let result = sum();
+console.log(result)
 
 
+  let fruits = ['apple', 'banana', false, NaN, 'mango'];
+
+  let filteredFruits = fruits.filter(Boolean);
+  console.log(filteredFruits); // Output: ['apple', 'banana', 'mango']

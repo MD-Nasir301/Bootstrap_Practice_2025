@@ -486,17 +486,18 @@ p.fs {
   perspective: 800px;
   margin: 0 auto;
   position: relative;
-  background-image: url("image/book2.png");
+  background-image: url("image/book5.png");
   background-size: cover;
   backface-visibility: hidden;
   transform-style: preserve-3d;
   transform: rotateY(0deg);
   transform-origin: left;
-  transition: transform 1s ease;
+  transition: all 1s ease;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 .bo:hover .boxx {
   transform: rotateY(-120deg);
+
 }
 .boxx::before {
   content: "";
@@ -524,3 +525,20 @@ p.fs {
   padding: 10px;
   text-align: center;
 }
+.book-content h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+} 
+.book-content p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+
+ .b {
+  border: 1px solid black;
+  height: 50px;
+  background: skyblue;
+ }
