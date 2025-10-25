@@ -70,3 +70,4 @@ console.log(result)
 
   let filteredFruits = fruits.filter(Boolean);
   console.log(filteredFruits); // Output: ['apple', 'banana', 'mango']
+  
