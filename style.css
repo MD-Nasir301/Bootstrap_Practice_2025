@@ -1,6 +1,9 @@
 /* শুধুমাত্র প্রয়োজনীয় custom CSS */
 
 body {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   position: relative;
 }
@@ -24,8 +27,12 @@ body {
   left: -50%;
   background-color: #f9f9f9;
   min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
   transition: 0.7s;
   list-style: none;
   visibility: hidden;
@@ -46,6 +53,8 @@ body {
   height: 100%;
   width: 0;
   background: rgb(234, 139, 139);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
   transition: 0.5s;
   opacity: 0;
 }
@@ -98,6 +107,8 @@ body {
 .video-box {
   border: 2px solid rgb(195, 255, 16);
   height: 330px;
+  -webkit-box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.7);
   box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.7);
 }
 
@@ -118,6 +129,8 @@ textarea {
   width: 100%;
   height: 500px;
   position: relative;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -142,6 +155,8 @@ textarea {
   z-index: 1;
   color: rgb(234, 234, 234);
   padding-top: 200px;
+  -webkit-mix-blend-mode: overlay;
+  -moz-mix-blend-mode: overlay;
   height: inherit;
   mix-blend-mode: overlay;
 }
@@ -187,6 +202,8 @@ textarea {
 }
 
 .dg {
+  -webkit-transition: all 5s ease;
+  -moz-transition: all 5s ease;
   transition: all 5s ease;
   position: absolute;
   left: 0;
@@ -209,6 +226,8 @@ textarea {
   left: 50px;
   background: red;
   padding: 20px;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
   transition: transform 0.5s ease; /* smooth movement */
 }
 
@@ -221,6 +240,8 @@ textarea {
 .tranform {
   height: 300px;
   background: lightblue;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
   transition: transform 0.5s ease;
   position: relative;
 }
@@ -229,10 +250,14 @@ textarea {
   position: absolute;
   top: 0;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 .tranform:hover .tr {
+  -webkit-transform: translateY(200px);
+  -moz-transform: translateY(200px);
   transform: translateY(200px);
   transform: ;
 }
@@ -267,7 +292,9 @@ textarea {
 }
 
 .box1 {
-  transform: skewX(20edeg);
+  -webkit-transform: skewX(20deg);
+  -moz-transform: skewX(20deg);
+  transform: skewX(20deg);
 }
 
 .scene {
@@ -287,14 +314,24 @@ textarea {
   width: 200px;
   height: 200px;
   background: linear-gradient(45deg, #00c6ff, #0516ff);
+  -webkit-transform: rotateX(60deg) rotateY(20deg);
+  -moz-transform: rotateX(60deg) rotateY(20deg);
   transform: rotateX(60deg) rotateY(20deg);
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
   transform-origin: center;
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
   transition: transform 1s ease;
+  -webkit-transform: rotateX(-3deg) rotateY(-150deg) skewX(50deg) skewY(20deg);
+  -moz-transform: rotateX(-3deg) rotateY(-150deg) skewX(50deg) skewY(20deg);
   transform: rotateX(-3deg) rotateY(-150deg) skewX(50deg) skewY(20deg);
   transform: ;
 }
 
 .scene:hover .square {
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
   transform: rotateX(0deg) rotateY(0deg);
 }
 
@@ -311,8 +348,14 @@ textarea {
   width: 100%;
   height: 100%;
   position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   transform-style: preserve-3d; /* 👈 3D structure রাখবে */
+  -webkit-transform: rotateX(-20deg) rotateY(20deg);
+  -moz-transform: rotateX(-20deg) rotateY(20deg);
   transform: rotateX(-20deg) rotateY(20deg);
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
   transition: transform 1s ease;
 }
 
@@ -333,31 +376,45 @@ textarea {
 
 /* Cube faces */
 .front {
+  -webkit-transform: translateZ(100px);
+  -moz-transform: translateZ(100px);
   transform: translateZ(100px);
 }
 .back {
+  -webkit-transform: rotateY(180deg) translateZ(100px);
+  -moz-transform: rotateY(180deg) translateZ(100px);
   transform: rotateY(180deg) translateZ(100px);
   background: rgba(255, 0, 0, 0.7);
 }
 .right {
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+  -moz-transform: rotateY(90deg) translateZ(100px);
   transform: rotateY(90deg) translateZ(100px);
   background: rgba(0, 255, 0, 0.7);
 }
 .left {
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+  -moz-transform: rotateY(-90deg) translateZ(100px);
   transform: rotateY(-90deg) translateZ(100px);
   background: rgba(255, 255, 0, 0.7);
 }
 .top {
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+  -moz-transform: rotateX(90deg) translateZ(100px);
   transform: rotateX(90deg) translateZ(100px);
   background: rgba(255, 0, 255, 0.7);
 }
 .bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(100px);
+  -moz-transform: rotateX(-90deg) translateZ(100px);
   transform: rotateX(-90deg) translateZ(100px);
   background: rgba(255, 165, 0, 0.7);
 }
 
 /* Hover এ cube ঘুরবে */
 .scene:hover .cube {
+  -webkit-transform: rotateX(-20deg) rotateY(200deg);
+  -moz-transform: rotateX(-20deg) rotateY(200deg);
   transform: rotateX(-20deg) rotateY(200deg);
 }
 
@@ -377,8 +434,14 @@ textarea {
   background-image: url("image/book.png");
   background-size: cover;
   background-position: center;
-    transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
   transition: transform 1s ease;
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
   transform-origin: left;
   border-left: 7px solid #6d5858;
 }
@@ -397,6 +460,8 @@ textarea {
   color: rgb(86, 5, 208);
 }
 .cover-area:hover .cover {
+  -webkit-transform: rotateY(-96deg);
+  -moz-transform: rotateY(-96deg);
   transform: rotateY(-96deg);
 }
 .b-title {
@@ -432,9 +497,17 @@ p.fs {
   width: 100%;
   height: 100%;
   border-radius: 5px;
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
   transform-origin: left; /* 👈 বাঁ দিক থেকে খুলবে */
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
   transition: transform 1s ease;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -444,6 +517,8 @@ p.fs {
   height: 100%;
   border-radius: 5px;
   object-fit: cover;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -454,7 +529,11 @@ p.fs {
   inset: 0;
   background: white;
   border-radius: 5px;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
   transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -468,6 +547,8 @@ p.fs {
 
 /* Hover করলে বইয়ের কভার খুলবে */
 .book:hover .cover {
+  -webkit-transform: rotateY(-160deg);
+  -moz-transform: rotateY(-160deg);
   transform: rotateY(-160deg); /* 👈 বাঁ দিক থেকে উল্টে যাবে */
 }
 .bo {
@@ -488,14 +569,28 @@ p.fs {
   position: relative;
   background-image: url("image/book5.png");
   background-size: cover;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
   transform: rotateY(0deg);
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
   transform-origin: left;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
   transition: all 1s ease;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 .bo:hover .boxx {
+  -webkit-transform: rotateY(-120deg);
+  -moz-transform: rotateY(-120deg);
   transform: rotateY(-120deg);
 
 }
@@ -508,8 +603,14 @@ p.fs {
   background-repeat: no-repeat; 
   background-position: left;
   border-radius: 5px;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
   transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   border: 3px solid rgb(245, 187, 187);
   border-left: none;
@@ -542,3 +643,11 @@ p.fs {
   height: 50px;
   background: skyblue;
  }
+
+ .form-control:valid {
+  background-image: url("image/book2.png"); /* ✅ Tick icon */
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  border-color: #198754; /* Green border */
+}
