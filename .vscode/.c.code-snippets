@@ -19,5 +19,21 @@
       "</div>"
     ],
     "description": "Create Bootstrap container, row, and column structure"
+  },
+  "Bootstrap h1 title Container row col-md-6": {
+    "scope": "html",
+    "prefix": "h",
+    "body": [
+      "<h1 class=\"title\">$1</h1>",
+      "<br />",
+      "<div class=\"container\">",
+      "  <div class=\"row\">",
+      "    <div class=\"col-md-6\">",
+      "      $2",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Create Bootstrap h1 title container, row, and column structure"
   }
 }
