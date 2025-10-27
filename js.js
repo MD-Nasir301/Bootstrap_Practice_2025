@@ -23,7 +23,7 @@ let alertContent = document.querySelector(".alert-content");
 let close = document.querySelector(".close");
 aler.addEventListener("click", () => {
   alertContent.classList.remove("d-none");
-  alertContent.classList.add("d-block");
+  
 
 });
 
