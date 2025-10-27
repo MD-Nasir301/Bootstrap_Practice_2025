@@ -12,6 +12,16 @@ body {
   border: 1px solid black;
   border-right: none;
 }
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: rgb(1, 173, 101);
+}
+.title::after {
+  content: " ------------------->";
+  color: rgb(1, 173, 101);
+}
 
 .text {
   font-size: 20px;
@@ -592,15 +602,14 @@ p.fs {
   -webkit-transform: rotateY(-120deg);
   -moz-transform: rotateY(-120deg);
   transform: rotateY(-120deg);
-
 }
 .boxx::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('image/book3.png') rgb(251, 245, 245);
-  background-size: 50%; 
-  background-repeat: no-repeat; 
+  background: url("image/book3.png") rgb(251, 245, 245);
+  background-size: 50%;
+  background-repeat: no-repeat;
   background-position: left;
   border-radius: 5px;
   -webkit-transform: rotateY(180deg);
@@ -615,7 +624,7 @@ p.fs {
   border: 3px solid rgb(245, 187, 187);
   border-left: none;
 }
- 
+
 .book-content {
   width: 230px;
   height: 300px;
@@ -630,24 +639,30 @@ p.fs {
   margin-top: 20px;
   font-size: 20px;
   color: #333;
-} 
+}
 .book-content p {
   font-size: 14px;
   color: #666;
   margin-top: 10px;
 }
 
-
- .b {
+.b {
   border: 1px solid black;
   height: 50px;
   background: skyblue;
- }
+}
 
- .form-control:valid {
+.form-control:valid {
   background-image: url("image/book2.png"); /* ✅ Tick icon */
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
   border-color: #198754; /* Green border */
+}
+
+.accordion-button::after {
+    background-image: url('image/aroow.png') ;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url('image/aroow.png');
 }
