@@ -666,3 +666,14 @@ p.fs {
 .accordion-button:not(.collapsed)::after {
     background-image: url('image/aroow.png');
 }
+
+.badge {
+  top: -10px;
+  right: -16px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
