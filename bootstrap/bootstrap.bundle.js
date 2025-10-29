@@ -1414,8 +1414,10 @@
     }
   }
 
+  
+
   /**
-   * Data API implementation
+   * Data API  implementation
    */
 
   EventHandler.on(document, EVENT_CLICK_DATA_API$5, SELECTOR_DATA_SLIDE, function (event) {

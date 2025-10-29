@@ -661,10 +661,10 @@ p.fs {
 }
 
 .accordion-button::after {
-    background-image: url('image/aroow.png') ;
+  background-image: url("image/aroow.png");
 }
 .accordion-button:not(.collapsed)::after {
-    background-image: url('image/aroow.png');
+  background-image: url("image/aroow.png");
 }
 
 .badge {
@@ -676,4 +676,57 @@ p.fs {
   color: white;
   font-size: 15px;
   font-weight: bold;
+}
+.carousel-inner {
+  height: 450px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 102%;
+}
+.carousel-control-next {
+  right: 45%;
+}
+.carousel-control-prev {
+  left: 45%;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background: none;
+}
+.carousel-control-next-icon {
+  background: none;
+}
+.carousel-control-next::after {
+  content: ">";
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -56%);
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+}
+.carousel-control-prev::after {
+  content: "<";
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -56%);
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+}
+.carousel-item {
+  width: 100%;
+  height: 450px;
+}
+.carousel-caption {
+  color: white;
+  font-weight: bold;
+  background: #00000062;
+  border-radius: 20px;
+  
 }
