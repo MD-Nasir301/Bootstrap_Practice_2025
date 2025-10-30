@@ -730,3 +730,15 @@ p.fs {
   border-radius: 20px;
   
 }
+.slider-area {
+  display: flex;
+  overflow: hidden;
+}
+.single-slider {
+  height: 100%;
+  width: 500px;
+  border-radius: 20px;
+  background: #be5151;
+  flex: 0 0 100%;
+
+}
