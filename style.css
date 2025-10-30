@@ -740,5 +740,14 @@ p.fs {
   border-radius: 20px;
   background: #be5151;
   flex: 0 0 100%;
+}
 
+.h-400 {
+  height: 400px;
+}
+.flex-box {
+flex: 1;
+}
+.fx {
+  flex: 2;
 }
