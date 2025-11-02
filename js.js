@@ -36,8 +36,5 @@
 // const alerts = [...alertList].map(element => new bootstrap.Alert(element))
 
 
-
-
 const slides = document.querySelectorAll('.slider-area .single-slider');
 console.log('মোট স্লাইড:', slides.length);
-
