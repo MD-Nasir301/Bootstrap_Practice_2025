@@ -38,3 +38,12 @@
 
 const slides = document.querySelectorAll('.slider-area .single-slider');
 console.log('মোট স্লাইড:', slides.length);
+
+const btn = document.querySelector("button"); // ধরো তোমার button
+
+window.addEventListener("scroll", () => {
+  const rect = btn.getBoundingClientRect();
+  const spaceBelow = window.innerHeight - rect.bottom;
+
+  console.log("Space below button:", spaceBelow);
+});
