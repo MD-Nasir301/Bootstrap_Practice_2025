@@ -754,3 +754,15 @@ flex: 1;
 
 
 
+/* This only changes this particular animation duration */
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+
+.title.animate__animated.animate__bounce{
+  --animate-duration: 5s;
+}
+
+
+
+
